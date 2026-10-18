@@ -105,11 +105,6 @@ const revealObserver = new IntersectionObserver(
       if (!entry.isIntersecting) return;
       entry.target.classList.add('visible');
 
-      const progressFill = entry.target.querySelector('.progress-fill');
-      if (progressFill) {
-        requestAnimationFrame(() => progressFill.classList.add('animate'));
-      }
-
       revealObserver.unobserve(entry.target);
     });
   },
@@ -161,16 +156,27 @@ function typeWriter() {
 
 setTimeout(typeWriter, 1000);
 
-/* ─── Progress bars on scroll (standalone observer for bars inside already-visible parents) ─── */
-const progressObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('animate');
-      progressObserver.unobserve(entry.target);
-    });
-  },
-  { threshold: 0.5 }
-);
-
-document.querySelectorAll('.progress-fill').forEach((bar) => progressObserver.observe(bar));
+/* ─── Contact: compose an enquiry without pretending to send it ─── */
+const collaborationForm = document.getElementById('collaboration-form');
+collaborationForm?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (!collaborationForm.reportValidity()) return;
+  const data = new FormData(collaborationForm);
+  const name = String(data.get('name') || '').trim();
+  const company = String(data.get('company') || '').trim();
+  const phone = String(data.get('phone') || '').trim();
+  const topic = String(data.get('topic') || '').trim();
+  const message = String(data.get('message') || '').trim();
+  if (!name || !phone || !topic || !message) return;
+  const text = [
+    'سلام. درخواست همکاری از طریق وب‌سایت محمد مهدی رفیعی',
+    `نام: ${name}`,
+    company ? `شرکت / سازمان: ${company}` : null,
+    `شماره تماس: ${phone}`,
+    `موضوع: ${topic}`,
+    `شرح درخواست: ${message}`,
+  ].filter(Boolean).join('\n');
+  const url = `https://wa.me/${profile.whatsappPhone}?text=${encodeURIComponent(text)}`;
+  // Opening WhatsApp is not the same as sending. Visitors confirm there.
+  window.open(url, '_blank', 'noopener,noreferrer');
+});

@@ -3,48 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="محمد مهدی رفیعی" />
-    <title>محمد مهدی رفیعی</title>
+    <meta name="theme-color" content="#f8fafc" />
+    <meta name="description" content="وب‌سایت رسمی محمد مهدی رفیعی؛ کارآفرین، تولیدکننده و صادرکننده، مالک و مدیرعامل شرکت کیمیا دستاورد ابتکار ایرانیان؛ معرفی ظرفیت تولید، سوابق مدیریتی و فرصت‌های همکاری." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:title" content="محمد مهدی رفیعی | کارآفرین و مدیرعامل شرکت کیمیا" />
+    <meta property="og:description" content="۲۵ سال تجربه در مدیریت، تولید، تجارت و آموزش فروش؛ معرفی برندهای کیمیا و پروشات و فرصت‌های همکاری اقتصادی." />
+    <meta property="og:image" content="/mahdi-rafiee.webp" />
+    <title>محمد مهدی رفیعی | مدیریت، تولید و تجارت</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preload" href="/fonts/Vazirmatn-Regular.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="/src/style.css" />
   </head>
-  <body class="font-sans text-slate-800 dark:text-slate-100 transition-all duration-300 min-h-screen">
+  <body class="font-sans text-slate-800 dark:text-slate-100 transition-colors duration-300 min-h-screen">
     <div class="bg-mesh" aria-hidden="true"></div>
-    <div class="bg-orbs" aria-hidden="true">
-      <div class="orb orb-1"></div>
-      <div class="orb orb-2"></div>
-      <div class="orb orb-3"></div>
-    </div>
+    <div class="bg-orbs" aria-hidden="true"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
 
-    <header id="header" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 px-4 sm:px-6 pt-4 overflow-x-clip">
-      <nav class="nav-bar mx-auto max-w-5xl flex items-center justify-between gap-4" aria-label="ناوبری اصلی">
-        <a href="#hero" class="nav-logo shrink-0">
-          <span id="nav-logo"></span>
-        </a>
+    <header id="header" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 px-4 sm:px-6 pt-4">
+      <nav class="nav-bar mx-auto max-w-6xl flex items-center justify-between gap-3" aria-label="ناوبری اصلی">
+        <a href="#hero" class="nav-logo shrink-0" aria-label="بازگشت به صفحه اصلی"><span id="nav-logo"></span></a>
         <ul id="nav-links" class="hidden lg:flex items-center gap-0.5"></ul>
         <div class="flex items-center gap-2 shrink-0">
           <button id="theme-toggle" type="button" class="icon-btn" aria-label="تغییر تم"></button>
-          <button id="mobile-menu-btn" type="button" class="icon-btn lg:hidden" aria-label="باز کردن منو" aria-expanded="false"></button>
+          <button id="mobile-menu-btn" type="button" class="icon-btn lg:hidden" aria-label="باز کردن منو" aria-expanded="false" aria-controls="mobile-menu"></button>
         </div>
       </nav>
-      <div id="mobile-menu" class="mobile-menu hidden lg:hidden mx-auto max-w-5xl mt-2">
-        <ul id="mobile-nav-links" class="flex flex-col p-2"></ul>
-      </div>
+      <div id="mobile-menu" class="mobile-menu hidden lg:hidden mx-auto max-w-6xl mt-2"><ul id="mobile-nav-links" class="flex flex-col p-2"></ul></div>
     </header>
 
-    <main class="relative max-w-5xl mx-auto px-4 sm:px-6 pt-28 pb-20 overflow-x-clip">
-      <section id="hero" class="min-h-[88vh] flex items-center mb-32 scroll-mt-28"></section>
-      <section id="archive" class="min-h-[88vh] flex items-center mb-32 scroll-mt-28"></section>
-      <section id="skills" class="mb-32 scroll-mt-28"></section>
-      <section id="experience" class="mb-32 scroll-mt-28"></section>
-      <section id="projects" class="mb-32 scroll-mt-28"></section>
+    <main class="relative max-w-6xl mx-auto px-4 sm:px-6 pt-28 pb-20">
+      <section id="hero" class="min-h-[84vh] flex items-center mb-24 sm:mb-32 scroll-mt-28"></section>
+      <section id="about" class="mb-24 sm:mb-32 scroll-mt-28"></section>
+      <section id="businesses" class="mb-24 sm:mb-32 scroll-mt-28"></section>
+      <section id="production" class="mb-24 sm:mb-32 scroll-mt-28"></section>
+      <section id="experience" class="mb-24 sm:mb-32 scroll-mt-28"></section>
+      <section id="training" class="mb-24 sm:mb-32 scroll-mt-28"></section>
+      <section id="partnerships" class="mb-24 sm:mb-32 scroll-mt-28"></section>
       <section id="contact" class="scroll-mt-28"></section>
     </main>
-
     <footer id="footer"></footer>
     <script type="module" src="/src/main.js"></script>
   </body>
-            <!-- <a href="${profile.resumeUrl}" download class="btn-primary" id="download-resume">
-            ${icons.download}
-            دریافت رزومه
-          </a> -->
 </html>

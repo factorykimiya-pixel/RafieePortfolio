@@ -201,7 +201,7 @@ export function renderProjects() {
       <h2 class="section-title">نمونه‌کارهای منتخب</h2>
       <p class="section-subtitle">چند نمونه از پروژه‌هایی که طراحی و توسعه‌شون رو بر عهده داشتم.</p>
     </div>
-    <div class="grid sm:grid-cols-2 gap-5">${cardsHtml}</div>
+    <div class="grid sm:grid-cols-1 gap-5">${cardsHtml}</div>
   `;
 }
 

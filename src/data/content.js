@@ -107,7 +107,7 @@ export const projects = [
     image: projectImage(),
     photo: "./Kimiya-company-6.webp",
     tags: [],
-    link: '',
+    link: 'https://proshutstore.ir/about-us/',
   },
   {
     title: 'نمایی از خط تولید کارخانه کیمیا',
@@ -115,7 +115,7 @@ export const projects = [
     image: projectImage(),
     photo: "./Kimiya-company-4.webp",
     tags: [],
-    link: '',
+    link: 'https://proshutstore.ir/about-us/',
   },
   {
     title: 'کارخانه کیمیا',
@@ -123,7 +123,7 @@ export const projects = [
     image: projectImage(),
     photo:"bb5a2475-0095-4c1d-b56f-1809ac33a879.webp",
     tags: [],
-    link: '',
+    link: 'https://proshutstore.ir/about-us/',
   },
   {
     title: 'کارخانه کیمیا',
@@ -131,6 +131,6 @@ export const projects = [
     image: projectImage(),
     photo:"./All-the-team-kimiya.webp",
     tags: [],
-    link: '',
+    link: 'https://proshutstore.ir/about-us/',
   },
 ];

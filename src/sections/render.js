@@ -10,7 +10,7 @@ import {
 
 export function renderNavigation() {
   const logo = document.getElementById('nav-logo');
-  logo.innerHTML = `${icons.logo}<span>mhmrez.dev</span>`;
+  logo.innerHTML = `<span>MohammadMahdi Rafiee</span>`;
 
   const navLinks = document.getElementById('nav-links');
   const mobileNavLinks = document.getElementById('mobile-nav-links');
@@ -28,7 +28,7 @@ export function renderHero() {
       <div class="order-2 lg:order-1 min-w-0">
         <div class="hero-item hero-delay-1 section-badge">
           <span class="status-dot"></span>
-          آماده همکاری
+         
         </div>
 
         <p class="hero-item hero-delay-1 text-slate-500 dark:text-slate-400 text-sm mb-3">
@@ -50,19 +50,16 @@ export function renderHero() {
         <div class="hero-item hero-delay-4 flex flex-wrap gap-3 mb-10">
           <a href="#projects" class="btn-outline">
             ${icons.layers}
-            دیدن نمونه‌کارها
+            دیدن سوابق
           </a>
         </div>
 
         <div class="hero-item hero-delay-5 grid grid-cols-3 gap-2 sm:gap-3 max-w-md mb-8 min-w-0">
           <div class="stat-card">
-            <div class="stat-value">4+</div>
+            <div class="stat-value">25+</div>
             <div class="stat-label">سال سابقه</div>
           </div>
-          <div class="stat-card">
-            <div class="stat-value">15+</div>
-            <div class="stat-label">پروژه انجام‌شده</div>
-          </div>
+   
         </div>
 
         <div class="hero-item hero-delay-5 flex flex-wrap items-center gap-5 text-sm text-slate-500 dark:text-slate-400">

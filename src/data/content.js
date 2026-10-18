@@ -2,7 +2,7 @@ export const profile = {
   name: 'محمد مهدی رفیعی',
   title: 'کارآفرین | تولیدکننده | صادرکننده | مدرس فروش و بازاریابی',
   location: 'ایران ، مشهد',
-  email: 'mohammadahmadicoder@gmail.com',
+  email: '',
   github: '',
   linkedin: '',
   resumeUrl: '',

@@ -61,6 +61,27 @@ export function renderHero() {
           </div>
    
         </div>
+        <div class="hero-item hero-delay-5 grid grid-cols-3 gap-2 sm:gap-3 max-w-md mb-8 min-w-0">
+          <div class="stat-card">
+            <div class="stat-value">۴ سال</div>
+            <div class="stat-label">سابقه فعالیت صادراتی</div>
+          </div>
+   
+        </div>
+        <div class="hero-item hero-delay-5 grid grid-cols-3 gap-2 sm:gap-3 max-w-md mb-8 min-w-0">
+          <div class="stat-card">
+            <div class="stat-value">۱۰۰٬۰۰۰</div>
+            <div class="stat-label">عدد ظرفیت اسمی تولید ماهانه</div>
+          </div>
+   
+        </div>
+        <div class="hero-item hero-delay-5 grid grid-cols-3 gap-2 sm:gap-3 max-w-md mb-8 min-w-0">
+          <div class="stat-card">
+            <div class="stat-value">۲۸۰+</div>
+            <div class="stat-label">نفر آموزش‌دیده فروش</div>
+          </div>
+   
+        </div>
 
         <div class="hero-item hero-delay-5 flex flex-wrap items-center gap-5 text-sm text-slate-500 dark:text-slate-400">
           <span class="flex items-center gap-2">${icons.location} ${profile.location}</span>
@@ -230,7 +251,7 @@ export function renderFooter() {
     <div class="border-t border-slate-200/60 dark:border-slate-800/60">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-slate-500 dark:text-slate-400">
         <p>© ${year} ${profile.name}</p>
-        <p class="flex items-center gap-1.5">طراحی و توسعه با ${icons.code}</p>
+        <p class="flex items-center gap-1.5"></p>
       </div>
     </div>
   `;

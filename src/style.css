@@ -248,7 +248,7 @@
   }
 
   .project-image-wrap {
-    @apply relative overflow-hidden h-52;
+    @apply relative overflow-hidden h-102;
   }
 
   .project-image {

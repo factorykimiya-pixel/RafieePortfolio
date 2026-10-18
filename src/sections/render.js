@@ -54,40 +54,25 @@ export function renderHero() {
           </a>
         </div>
 
-        <div class="hero-item hero-delay-5 grid grid-cols-3 gap-2 sm:gap-3 max-w-md mb-8 min-w-0">
+        <div class="hero-item hero-delay-5 grid grid-cols-4 gap-2 sm:gap-3 max-w-md mb-8 min-w-0">
           <div class="stat-card">
             <div class="stat-value">25+</div>
             <div class="stat-label">سال سابقه</div>
           </div>
-   
-        </div>
-        <div class="hero-item hero-delay-5 grid grid-cols-3 gap-2 sm:gap-3 max-w-md mb-8 min-w-0">
-          <div class="stat-card">
+           <div class="stat-card">
             <div class="stat-value">۴ سال</div>
             <div class="stat-label">سابقه فعالیت صادراتی</div>
           </div>
-   
-        </div>
-        <div class="hero-item hero-delay-5 grid grid-cols-3 gap-2 sm:gap-3 max-w-md mb-8 min-w-0">
-          <div class="stat-card">
+             <div class="stat-card">
             <div class="stat-value">۱۰۰٬۰۰۰</div>
             <div class="stat-label">عدد ظرفیت اسمی تولید ماهانه</div>
           </div>
-   
-        </div>
-        <div class="hero-item hero-delay-5 grid grid-cols-3 gap-2 sm:gap-3 max-w-md mb-8 min-w-0">
-          <div class="stat-card">
+                 <div class="stat-card">
             <div class="stat-value">۲۸۰+</div>
             <div class="stat-label">نفر آموزش‌دیده فروش</div>
           </div>
    
         </div>
-
-        <div class="hero-item hero-delay-5 flex flex-wrap items-center gap-5 text-sm text-slate-500 dark:text-slate-400">
-          <span class="flex items-center gap-2">${icons.location} ${profile.location}</span>
-          <span class="flex items-center gap-2">${icons.mail} ${profile.email}</span>
-        </div>
-      </div>
 
       <div class="hero-item hero-delay-3 order-1 lg:order-2 flex justify-center lg:justify-end min-w-0 w-full">
         <div class="profile-wrap">
